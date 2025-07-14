@@ -1,4 +1,5 @@
 name: Claude Code
+
 on:
   issue_comment:
     types: [created]
@@ -33,3 +34,4 @@ jobs:
         uses: anthropics/claude-code-action@beta
         with:
           anthropic_api_key: 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
+
