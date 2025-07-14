@@ -25,7 +25,7 @@ jobs:
       id-token: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
@@ -33,5 +33,4 @@ jobs:
         id: claude
         uses: anthropics/claude-code-action@beta
         with:
-          anthropic_api_key: ${{ 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
-          }}
+          anthropic_api_key: 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
